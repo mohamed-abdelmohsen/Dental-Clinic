@@ -1,0 +1,70 @@
+{% extends 'base.html'%}
+{% load static%}
+{% block content%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/aboutus.css'%}">
+    <title>Dentil Clinic</title>
+</head>
+
+<body>
+
+    <!-- start landing  -->
+    <div class="landing">
+         
+        <div class="container">
+                <div class="image">
+                <img src="{% static 'images/photo1.jpg'%}" alt="" width="450px">
+                </div>
+                <div class="text">
+                    <p>
+                        <u style="color: rgb(190, 32, 32);">Teeth lap</u> Center has been providing dental services since 1984, when Prof. <br>
+                        A. Azim established it as the first ever multi-specialty dental center in Maadi. Since then,<br>
+                        it has evolved into one of the best leading dental treatment providers in Egypt, gaining more success<br>
+                         and fame providing high quality service and treatment for highly prestigious clients.
+                    </p>
+                </div>
+        </div>
+        <div class="navbar">
+            <div class="image-1">
+            <img src="{% static 'images/photo2.jpg'%}">   
+            </div>
+            <div class="text-1">
+                <p>
+                    <u style="color: #f89e55;">Our aim</u><br>
+                    • Preventing a high-level service.<br>
+                    • Maintain an effective and efficient patient care.<br>
+                    • Maintain and communicate current patient policies.<br>
+                    • Maintain a system of operation that can accommodate changes in the educational programs.<br>
+                </p>
+            </div>
+        </div>
+        <div class="nav">
+           <div class="image-2">
+            <img src="{% static 'images/photo3.jpg'%}">
+           </div>
+           <div class="text-2">
+                <p>
+                    <u style="color: rgb(190, 32, 32);">Teeth lap</u> Center is especially known for the advanced state of the art <br>
+                   it provides.The pioneering experience of Prof. Azim and his team in the field<br>
+                   of dental Implants utilizing latest techniques and best implant brands provides<br>
+                   hope for patients seeking true happy smiles. Teeth Aligners, and smile designs, <br>
+                   well as the revolutionary 3D Dental CT imaging, WATERLASE® LASER and CEREC® computer<br>
+                   designed and printed restorations became icons within our dental services portfolio.
+                </p>
+           </div>
+        </div>
+    </div>
+    <!-- end landing  -->
+
+</body>
+
+</html>
+ 
+
+{% endblock content%}

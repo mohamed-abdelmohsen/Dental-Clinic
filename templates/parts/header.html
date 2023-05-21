@@ -1,0 +1,73 @@
+{% load static%}
+<link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+{% block content%}
+
+
+
+{% for message in messages %}
+<div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+    <strong>Message:</strong> {{ message }}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+{% endfor%}
+
+
+
+
+<div class="header">
+    <div class="container">
+        <img class="logo" src="{%static 'images/logo-1.png'%}" alt="">
+        <span style="position: absolute; color: rgb(13, 196, 171); padding-left: 70px; 
+        padding-top: 13px; font-weight: bold; font-style: italic; font-size: large; font-stretch: condensed;">
+            Teeth Lap</span>
+
+        <span>
+            {% if user.is_authenticated %}
+            <p>Hello , {{ user.first_name }}</p>
+            
+            <button type="submit"><a href="/signout">SignOut</a></button>
+            {% else %}
+            <h2>Welcome</h2>
+            <button type="submit"><a href="/signin">Login</a></button>
+            <button type="submit"><a href="/signup">SignUp</a></button>
+
+            {% endif%}
+
+
+        </span>
+
+        
+            <form class="d-flex" method=POST action="{% url 'search'%}">
+                {% csrf_token%}
+                <div class="col-md-6">
+                <input class="form-control me-2" type="search" 
+                placeholder="Search" aria-label="Search" name="searched">
+                <button class="btn 
+                btn-outline-secondary"
+                type="submit">Search
+                </button></div>
+    
+            </form>
+        <div class="links">
+            <span class="icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+            <ul>
+                <li><a href="{% url 'profile'%}">Profile</a></li>
+                <li><a href="{% url 'home'%}">Home</a></li>
+                <li><a href="{% url 'our_services'%}"> Our Services</a></li>
+                <li><a href="{% url 'about'%}">About Us</a></li>
+                <li><a href="{% url 'our_team'%}">Our Team</a></li>
+                <li><a href="{% url 'privacy'%}">Privacy&More</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content%}

@@ -1,0 +1,56 @@
+{% extends 'base.html'%}
+{% load static%}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/staff.css'%}">
+<center> <h1>Our Team</h1></center>
+<div class="staff">
+  <div class="staff-member">
+    <div class="staff-member-image">
+      <img src="{% static 'images/1.jpg'%}" alt="Staff Member 1">
+    </div>
+    <div class="staff-member-info">
+      <h3>Noha Ali</h3>
+      <p>Receptionist</p>
+      <p>Email: nohaali@example.com</p>
+      <ul>
+        <li>Expertise: Hard Worker , Social Person</li>
+        <li>Education: Degree form Mansoura University</li>
+        <li>Awards: Award Of Computing </li>
+      </ul>
+    </div>
+  </div>
+  <div class="staff-member">
+    <div class="staff-member-image">
+      <img src="{% static 'images/2.jpg'%}" alt="Staff Member 2">
+    </div>
+    <div class="staff-member-info">
+        
+      <h3>Hesham Mahmoud</h3>
+      <p>Dentist</p>
+      <p>Email: heshamseada@example.com</p>
+      <ul>
+        <li>Expertise: Gum and teeth expert</li>
+        <li>Education: Degree from Mansoura University</li>
+        <li>Awards: Award of Dentist</li>
+      </ul>
+    </div>
+  </div>
+  <div class="staff-member">
+    <div class="staff-member-image">
+      <img src="{% static 'images/3.jpg'%}" alt="Staff Member 3">
+    </div>
+    <div class="staff-member-info">
+      <h3>Hager Elsayed</h3>
+      <p> Dentist</p>
+      <p>Email: hagerelsayed@example.com</p>
+      <ul>
+        <li>Expertise: Gum and teeth expert</li>
+        <li>Education: Degree from Mansoura University</li>
+        <li>Awards: Award of Dentist</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+{% endblock content %}

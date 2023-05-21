@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+{% load static%}
+<link rel="stylesheet" href="{% static 'css/search.css'}">
+{% block content%}
+
+<center>
+
+    {% if searched%}
+      <h1> You searched for {{searched}}</h1>
+      <br/>
+      {% for x in searches%}
+      <div class="search">
+
+       <h2> {{x}} </h2>  <br/> {{x.content}} <br/>
+
+      </div>
+      {% endfor%}
+
+    {% else%}
+      <h1> There's no such a file</h1>
+    {% endif%}
+
+</center>
+
+{% endblock content%}

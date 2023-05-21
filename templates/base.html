@@ -1,0 +1,11 @@
+
+{% load static%}
+<!-- this link will be deleted  -->
+<link rel="stylesheet" href="{% static 'css/style.css'%}">
+<link rel="stylesheet" href="{% static 'css/profile.css'%}">
+
+{% include 'parts/header.html'%}
+{% block content%}
+
+{% endblock content%}
+{% include 'parts/footer.html'%}

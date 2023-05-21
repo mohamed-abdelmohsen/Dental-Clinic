@@ -1,0 +1,81 @@
+
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content%}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <title>Dentil Clinic</title>
+</head>
+
+<body>
+    <!-- start landing  -->
+    <div class="landing">
+        <div class="container">
+            <div class="image">
+                <img src="{% static 'images/logo-2.jpg'%}" alt="" width="450px">
+            </div>
+            <div class="text">
+                <p>Correct daily brushing and toothpaste is the most important way to maintain oral and dental
+                    hygiene and prevent cavities and the resulting diseases. Toothbrush care is also an important
+                    component
+                    of a clean and healthy mouth. Dental health is a major element in preserving human health,
+                    as well as preventing it, and <u style="color: rgb(233, 26, 26);"> Teeth Lap</u> play an important
+                    role in that.</p>
+            </div>
+            <div class="image-1">
+                <img src="{% static 'images/logo-4.jpg'%}" alt="">
+            </div>
+            <div class="text-1">
+                <p> <u style="color: #f89e55;">The importance of brushing teeth:</u><br>
+                    • Preventing the accumulation of plaque on the teeth (which is a sticky and thin layer formed on the
+                    surface of the teeth from food residues and contains bacteria that cause gum disease and tooth
+                    decay).<br>
+                    • Prevention of gingivitis.<br>
+                    • Save time and money spent on treating dental problems.<br>
+                    • Get fresh breath, by preventing the formation of bacteria that cause bad odors.<br>
+                    • Reducing the formation of external pigmentation on the surfaces of the teeth.<br>
+                </p>
+            </div>
+            <div class="image-2">
+                <img src="{%static 'images/logo-3.jpg'%}" alt="">
+            </div>
+            <div class="text-2">
+                <p> <u style="color: rgb(13, 196, 171);">Teeth cleaning steps:</u><br>
+                    • Place the brush on the teeth at an angle of 45 degrees, so that the bristles of the brush touch
+                    the tip of the gums and teeth.<br>
+                    • Gently brush every 2 or 3 teeth together, back and forth from the gum side to the end of the
+                    tooth, and so on for the rest of the teeth.<br>
+                    • Brush the back teeth (molars) by placing the brush at an angle of 45 degrees, back and forth, and
+                    in a circular motion on all internal surfaces.<br>
+                    • Clean the inside of the teeth using the brush head, and move the brush longitudinally up and
+                    down.<br>
+                    • Brushing the edges of the teeth, then brushing the tongue using its own brush, or with a
+                    toothbrush.</p>
+            </div>
+        </div>
+    </div>
+    <div class="opening-hours">
+        <h2>Opening Hours</h2>
+        <ul>
+          <li>Monday - Friday: 9am - 6pm</li>
+          <li>Saturday: 10am - 4pm</li>
+          <li>Sunday: Closed</li>
+        </ul>
+    </div>
+    <!-- end landing  -->
+    <!-- start footer  -->
+
+    <!-- end footer  -->
+</body>
+
+</html>
+
+{% endblock content%}

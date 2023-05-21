@@ -1,0 +1,9 @@
+{% autoescape off %}
+
+Welcome To Teeth Lap,
+Hello {{ name }} ,
+Please Confirm Your E-mail By Clicking The Following Link .
+Confirmation Link : http://{{domain}}{% url 'activate' uidb64=uid token=token %} .
+
+
+{% endautoescape %}
